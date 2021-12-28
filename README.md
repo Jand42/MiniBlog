@@ -42,7 +42,7 @@ As this sample uses some easy persistance by writing/reading `.txt` files in an 
 To check out the sample project, run `git clone https://github.com/Jand42/MiniBlog` then `dotnet run` from the MiniBlog folder.
 Then open `http://localhost:5000/`
 
-![Screenshot of home page](https://i.imgur.com/gvx7gJI.png)
+![Screenshot of home page](https://i.imgur.com/UpwOWx2.png)
 
 # How WebSharper creates routers
 
