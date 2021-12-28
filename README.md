@@ -6,13 +6,13 @@ The main advantage of using a single language for a full-stack project (be it in
 This makes making updates to full-stack project much safer and quicker. WebSharper's philosophy is to enable full-stack F#/C# projects that take advantage of this.
 
 Today we are looking at how to share a sitemap and router (mapping between URLs and locations in the site) between client and server.
-We will be able to :
+We will be able to:
 
   * Generate links from site locations (Endpoint values)
   * Handle certain link navigations (URL changes) on the client without reloading the page, while reloading from server when we enter another part of the site
 
 So routing duties are split between the server and client, meanwhile both sides are able to link to any page on the site safely.
-This is a compromise between a many-page site and a single-page application which can be useful where speed of navigation is preferred in some page navigations and full page reload for up-to date information or server-side processing in otheres.
+This is a compromise between a many-page site and a single-page application which can be useful where speed of navigation is preferred in some page navigations and full page reload for up-to date information or server-side processing in others.
 
 Our demo project is a rudimentary blog engine, that has a Home page with the full list of articles, Article pages for each entry for reading, and an Edit page for editing a selected article or a creating a new one.
 The sitemap is represented by this type:
@@ -37,7 +37,7 @@ Splitting between these lines can be centralized with an active pattern:
 
 # Setup
 
-As this sample uses some easy persistance by writing/reading `.txt` files in an `/articles` folder, there is no online demo.
+As this sample uses some easy persistence by writing/reading `.txt` files in an `/articles` folder, there is no online demo.
 
 To check out the sample project, run `git clone https://github.com/Jand42/MiniBlog` then `dotnet run` from the MiniBlog folder.
 Then open `http://localhost:5000/`
